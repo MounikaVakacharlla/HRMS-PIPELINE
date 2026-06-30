@@ -10,7 +10,7 @@ pipeline {
 
             steps {
 
-                echo "Building branch: ${env.BRANCH_NAME}"
+                echo "Building DEVELOPMENT branch"
 
             }
 
@@ -21,7 +21,7 @@ pipeline {
 
             steps {
 
-                echo "Running build for ${env.BRANCH_NAME}"
+                echo "Running build for  DEVELOPMENT branch"
 
             }
 
@@ -32,7 +32,7 @@ pipeline {
 
             steps {
 
-                echo "Testing ${env.BRANCH_NAME}"
+                echo "Testing DEVELOPMENT branch"
 
             }
 
