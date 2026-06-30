@@ -1,44 +1,33 @@
 pipeline {
 
-    agent any
+agent any
 
 
-    stages {
+stages {
 
 
-        stage('Checkout') {
+stage('Build') {
 
-            steps {
+steps {
 
-                echo "Building branch: ${env.BRANCH_NAME}"
+echo "Building PAYROLL Feature"
 
-            }
+}
 
-        }
-
-
-        stage('Build') {
-
-            steps {
-
-                echo "Running build for ${env.BRANCH_NAME}"
-
-            }
-
-        }
+}
 
 
-        stage('Test') {
+stage('Test') {
 
-            steps {
+steps {
 
-                echo "Testing ${env.BRANCH_NAME}"
+echo "Testing PAYROLL Feature"
 
-            }
+}
 
-        }
+}
 
 
-    }
+}
 
 }
